@@ -17,6 +17,7 @@ const config: Config = {
       colors: {
         primary: 'var(--stone-100)',
         secondary: 'var(--stone-200)',
+        terciary: 'var(--stone-800)',
       },
     },
   },
