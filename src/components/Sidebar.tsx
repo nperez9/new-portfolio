@@ -60,8 +60,8 @@ export const Navigation = ({ setOpen }: { setOpen: React.Dispatch<React.SetState
           href={link.href}
           onClick={() => isMobile() && setOpen(false)}
           className={twMerge(
-            'text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm',
-            isActive(link.href) && 'bg-white shadow-lg text-primary',
+            'text-secondary hover:text-stone-50 transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm hover:scale-105',
+            isActive(link.href) && 'bg-white shadow-lg text-sky-950 hover:text-sky-500',
           )}
         >
           <link.icon className={twMerge('h-4 w-4 flex-shrink-0', isActive(link.href) && 'text-sky-500')} />
@@ -92,7 +92,7 @@ const SidebarHeader = () => {
   return (
     <div className="flex space-x-2">
       <Image
-        src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80"
+        src="/images/profile.jpeg"
         alt="Avatar"
         height="40"
         width="40"
