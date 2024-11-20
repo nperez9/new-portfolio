@@ -11,9 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'John Doe - Developer',
-  description:
-    'John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.',
+  title: 'Nicolas Perez - Developer',
+  description: 'Hello! Im Nicolás, web and videogame developer. Enter and let my showcase my proyects',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -77,8 +77,10 @@ export const Navigation = ({ setOpen }: { setOpen: React.Dispatch<React.SetState
           key={link.href}
           href={link.href}
           className={twMerge(
-            'text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm',
+            'text-secondary hover:text-stone-50 transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm hover:scale-105',
+            isActive(link.href) && 'bg-white shadow-lg text-sky-950 hover:text-sky-500',
           )}
+          target="_blank"
         >
           <link.icon className={twMerge('h-4 w-4 flex-shrink-0', isActive(link.href) && 'text-sky-500')} />
           <span>{link.label}</span>
